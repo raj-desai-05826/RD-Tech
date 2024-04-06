@@ -4,15 +4,15 @@ let nonbtn = document.getElementById("non-btn");
 
 stu.onclick = () =>{
     alert("R🥰D");
-    alert("Moye Moye");
+    alert("Moye Moye 😅");
 }
 
 admin.onclick = () =>{
     alert("R🥰D");
-    alert("Moye Moye");
+    alert("Moye Moye 😅");
 }
 
 nonbtn.onclick = () =>{
     alert("R🥰D");
-    alert("Moye Moye");
+    alert("Moye Moye 😅");
 }
