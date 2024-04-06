@@ -1,0 +1,104 @@
+.welcome-form-cont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.welcome-box {
+    height: 30rem;
+    width: 27rem;
+    border: 2px solid var(--green);
+    border-radius: 15px;
+    box-shadow: -20px 20px 15px black;
+    background-color: #101b2c;
+    position: relative;
+    padding: 8rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    animation: box-anime 2s ease-in-out infinite, zoom-anime 2s ease-in-out 1;
+}
+
+@keyframes box-anime {
+    0% {
+        transform: translateY(0px);
+        border-color: var(--green);
+
+    }
+
+    70% {
+        transform: translateY(-10px);
+        border-color: #256448;
+
+    }
+
+    100% {
+        transform: translateY(0px);
+        border-color: var(--green);
+
+    }
+}
+
+@keyframes zoom-anime {
+    0% {
+        scale: .1;
+        box-shadow: 0px 1px 150rem #fff;
+    }
+
+    50% {
+        scale: 1.4;
+        box-shadow: 0px 1px 100px #000;
+    }
+
+    100% {
+        scale: 1;
+        box-shadow: 0px 1px 1px #000;
+    }
+}
+
+.logo {
+    position: absolute;
+    border-radius: 50%;
+    top: -4rem;
+    left: 7rem;
+    border: 2px solid var(--green);
+    cursor: no-drop;
+    animation: jump-logo 1s ease-in-out infinite;
+}
+
+.err {
+    color: #fff;
+    display: none;
+}
+
+@keyframes jump-logo {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.wel-btn {
+    width: 20rem;
+}
+
+@media screen and (max-width:900px) {
+    .welcome-box {
+        display: none;
+    }
+
+    .err {
+        display: block;
+    }
+}
